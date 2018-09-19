@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="copyright" content="">
+    <meta name="keywords" content="neo,crowdbank,crowd,crypto,crytobank,bank">
+    <meta name="robots" content="index,follow">
+    <meta name="DC.title" content="">
+
+    <title>CrowdBank - Now everyone can have a crypto-bank account!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="icon" href="img/mark-ico-small.png">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/new-age.css" rel="stylesheet">
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <script type="text/JavaScript">
+
+      function onsend() {
+        var email_in = $("#email").val();
+
+        if (!email_in || email_in.length == 0) {
+          alert('Please input email address!');
+          return;
+        }
+        else if (email_in.indexOf('@') == -1) {
+          alert('Email address is wrong, Please re-Enter!');
+          return;
+        }
+
+        $.post('join_user.php',
+        {
+          email:email_in
+        },
+        function(data, status){
+          alert(data);
+        });
+      }
+      $('#sendmail').submit(function(event) {
+
+      });
+
+      $(window).scroll(function(){
+        var screenHeight = $(window).height();
+        var offset = $(window).scrollTop();
+        var maindiv_off = $('#maindiv').offset().top;
+        var highlight_off = $('#highlight').offset().top;
+        var product_off = $('#products').offset().top;
+        var technology_off = $('#technology').offset().top;
+        var whitepaper_off = $('#whitepaper').offset().top;
+        var contact_off = $('#contact').offset().top;
+      });
+
+    </script>
+  </head>
+
+  <body id="page-top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+          <a class="nav-link js-scroll-trigger" href="#home"><img class="navbar-brand" src="img/label.png" / max width= "200px"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#token">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="pdf/WHITEPAPER%20(Finalised%20v0.1).pdf">WhitePaper</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">ContactUs</a>
+              </li>
+              <li class="nav-item" style="padding-right:20px">
+            <a class="nav-link js-scroll-trigger" href="login.html">Sign In</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header class="masthead" id="home">
+        <div class="container">
+            <div class="col-lg-12 col-md-12 mx-auto">
+              <p class="header-line1"><b>Now everyone can have a crypto-bank account!</b></p>
+              <p class="header-line2">Store. Spend. Exchange. Lend. Borrow. Get Insured!>
+              <p class="header-text">CROWDBANK is the World’s First privacy-enhanced</p>
+              <p class="header-text">crypto-currency bank on neo blockchain platform.</p>
+            </div>
+            <div class="col-lg-12 col-md-12" style="padding-top:50px; width:400px" align="center">
+              <p class="header-line3">Click <b>HERE</b> and join us now!</p>
+              <!--<p class="header-line4"><b>PRE-ICO</b> STARTS IN</p>
+              <p class="header-line5">00 : 00 : 00 : 00</p>
+              <p style="font-size:11pt;margin-top:0px;color:#8A2BE2">&nbsp;&nbsp;&nbsp;Days&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Hours&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minutes&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seconds</p>-->
+            </div>
+        </div>
+      </header>
+
+      <section class="token text-center" id="token">
+        <div class="container">
+          <p class="token-line1"><b>What is CrowdBank&#63;</b></p>
+          <p class="token-line2" >CrowdBank will be a revolutionary online crypto-bank that </p>
+          <p class="token-line2" >will be a repository for the cryptocurrencies of the users.</p>
+          <p class="token-line3"><b>Token Sale</b></p>
+          <img class="token-image1" src="img/sale_schedule.png"/ class="responsive" max width="70%" align="center">
+          <img class="token-image1" src="img/caps.png"/ class="responsive" max width="90%" align="right">
+        </div>
+      </section>
+
+      <section class="products text-center" id="products">
+        <div class="container">
+          <p class="products-title"><b>PRODUCTS</b></p>
+          <div style="width:100%;text-align:left">
+            <div class="row text-center">
+              <div class="col-lg-4 col-md-4">
+                <p class="function-title"><b>SECURED WALLET</b></p>
+                <img src="img/wallet.png" />
+                <p class="function-desc" style="text-align:justify">Anyone can open an account with Crowdbank on smartphone. Seamless KYC process. Store your cryptocurrency with Crowdbank’s 3-tier security enhanced wallet and be insured</p>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <p class="function-title"><b>EXCHANGE</b></p>
+                <img src="img/exchange.png" />
+                <p class="function-desc" style="text-align:justify">Enjoy super-low fee, when you exchange from one crypto-currency to another. Why pay more, when smart-contract-technology does most of the work?</p>
+              </div>
+              <div class="col-lg-4 col-md-4 text-center">
+                <p class="function-title"><b>PREPAID CARD</b></p>
+                <img src="img/debitcard.png" />
+                <p class="function-desc" style="text-align:justify">Crowdbank automates the conversation of your crypto-currency to FIAT currency whenever you wish to make a purchase at any retail outlet with NFC (near-field-contactless) terminal. </p>
+              </div>
+            </div>
+            <div class="row text-center" style="padding-top:40px">
+              <div class="col-lg-4 col-md-4">
+                <p class = "function-title"><b>P2P PAYMENTS</b></p>
+                <img src="img/p2p.png" />
+                <p class="function-desc" style="text-align:justify">All users can send and receive crypto-currency, within 10 seconds, from anyone with Crowdbank’s Wallet. It connects merchants, buyers, payors, payees, shoppers (and the list is endless) with borderless trade at super-low transaction fee. </p>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                  <p class = "function-title"><b>P2P LOAN</b></p>
+                  <img src="img/terms.png" />
+                  <p class="function-desc" style="text-align:justify">Users can lend or borrow from one another, as payment terms are clearly defined and agreed on with 100% transparency. </p>
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <p class = "function-title"><b>INSURANCE</b></p>
+                <img src="img/insurance.png" />
+                <p class="function-desc" style="text-align:justify">Crowdbank provides risk sharing network where users can pool their premiums together to insure against a specific risk. It can be any risk the the users deem important and Crowdbank provides reinsurance if the pool is insufficient. This hybrid insurance model ensures premium stays low and funds are always sufficient to cover risks. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="roadmap text-center" id="roadmap">
+        <div class="container">
+          <p class="products-title"><b>ROADMAP</b></p>
+          <img class="token-image1" src="img/roadmap.png"/
+ 		class="responsive" max width="60%" align="center">
+        </div>
+      </section>
+
+      <section class="people text-center" id="team">
+        <div class="container">
+          <!--<p class="people-title"><b>INVESTORS & PARTNERS</b></p>
+          <div class="people-line"> </div>
+          <div style="width:100%;margin-top:50px">
+            <div class="row text-center">
+              <div class="col-lg-4 col-md-4">
+                <img src="img/man/none.png" />
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <img src="img/man/none.png" />
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <img src="img/man/none.png" />
+              </div>
+            </div>
+          </div>
+
+          <p class="people-title"><b>ADVISORS</b></p>
+          <div class="people-line"> </div>
+          <div style="width:100%;margin-top:50px">
+            <div class="row text-center">
+              <div class="col-lg-4 col-md-4">
+                <img src="img/man/none.png" />
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <img src="img/man/none.png" />
+              </div>
+              <div class="col-lg-4 col-md-4">
+                <img src="img/man/none.png" />
+              </div>
+            </div>
+          </div>-->
+
+          <p class="people-title"><b>TEAM</b></p>
+          <div class="people-line"> </div>
+          <div style="width:100%;margin-top:50px"; align="center">
+            <div class="row text-center">
+<div class="col-lg-2 col-md-2"></div>
+              <div class="col-lg-2 col-md-2">
+                <img src="img/man/Malcolm Tan.png" class="responsive" max width="90%">
+                <p class="people-name"><b>MALCOLM TAN</b></p>
+                <p class="people-job">Co-Founder</p>
+              </div>
+<div class="col-lg-1 col-md-1"></div>
+              <div class="col-lg-2 col-md-2">
+                <img src="img/man/Ismail Malik.png" class="responsive" max width="90%">
+                <p class="people-name"><b>ISMAIL MALIK</b></p>
+                <p class="people-job">Chairman</p>
+              </div>
+<div class="col-lg-1 col-md-1"></div>
+              <div class="col-lg-2 col-md-2">
+                <img src="img/man/Lim Fang Jiaw (DR).png" class="responsive" max width="90%">
+                <p class="people-name"><b>FJ LIM (DR)</b></p>
+                <p class="people-job">Co-Founder</p>
+              </div>
+            </div>
+<div class="col-lg-2 col-md-2"></div>
+            <div class="row text-center" align="center">
+
+<div class="col-lg-2 col-md-2"></div>
+              <div class="col-lg-2 col-md-2">
+                <img src="img/man/Ken Wang.png" class="responsive" max width="90%">
+                <p class="people-name"><b>KEN WANG</b></p>
+                <p class="people-job">Operation Lead</p>
+              </div>
+<div class="col-lg-1 col-md-1"></div>
+              <div class="col-lg-2 col-md-2">
+                <img src="img/man/Alireza Sarrafi.png" class="responsive" max width="90%">
+                <p class="people-name"><b>ALIREZA SARRAFI</b></p>
+                <p class="people-job">Payment Expert</p>
+              </div>
+            </div>
+<div class="col-lg-2 col-md-2"></div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="faqs" id="faqs">
+        <div class="container text-center faqs-header" style="padding-top:120px">
+          <p class="faqs-title"><b>FAQs</b></p>
+          <!--<div class="faqs-line"> </div>
+          <div class="row text-center" style="margin-top:30px">
+            <div class="col-lg-4 col-md-4 col-xs-4 ">
+              <a class="faqs-title2" href="#Contributions">Contributions</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4 ">
+              <a class="faqs-title2" href="">Business</a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4 ">
+              <a class="faqs-title2" href="">Technology</a>
+            </div>
+          </div>-->
+        </div>
+      </section>
+
+      <section class="faqs_answer" id="Contributions">
+        <div class="container">
+          <div class="row" style="padding-left:10px">
+<button class="collapsible" style="text-align:justify">What is a Token Sale?</button>
+      <div class="content" style="text-align:justify">
+<p>It is a new form of funding by selling a new cryptocurrency to raise funds for product development. The Token Sale participants send cryptocurrency to a source, and the entity that carries out the Token Sale allocates a certain quantity of the Tokens to participants.</p>
+</div>
+
+<button class="collapsible" style="text-align:justify">What is the difference between the Token Sale, Equity Investment, and Donation?</button>
+      <div class="content" style="text-align:justify">
+<p>When you participate in a token sale, tokens will be allocated to you through a smart contract. While these tokens may have value or utility in the future, this value and utility are not guaranteed. This is different than making an equity investment in a company, through which you purchase a stake in the company and receive securities such as stocks or bonds in proportion to your investment. A token sale does not provide any form of stake, dividend or bond. Donations are money given freely with nothing expected return.  However, donors do receive receipts and may be eligible for tax benefits, based on their donations.  Participants in token sales do not receive proof of purchase documents such as receipts and should not expect any special tax benefits for participating in a token sale.</p>
+</div>
+
+<button class="collapsible" style="text-align:justify">What is the difference between CBK token and SCE token?</button>
+      <div class="content" style="text-align:justify">
+<p>The CrowdBanks&#700; (CBK) token is a blockchain-based utility token, for ICO Token Sale, which allows users to access the CrowdBank&#700;s platform. All unified rewards are given in CBK Token.
+
+<p>The Stable Coin EURO (SCE) is the blockchain-based currency, whose cryptocoins in circulation are backed by an equivalent amount of EURO fiat currency, used within the CrowdBank network for transaction such as peer to peer payments, loans, insurance premiums and so on.</p>
+        </div>
+
+<button class="collapsible" style="text-align:justify">Is there a participation limit per individual?</button>
+      <div class="content" style="text-align:justify">
+<p>There is no limit per participant.</p>
+        </div>
+
+<button class="collapsible" style="text-align:justify">Is there any restriction on participants?</button>
+      <div class="content" style="text-align:justify">
+<p>Citizens, residents (tax or otherwise), or green card holders, of the United States of America are ineligible to purchase any CBK tokens during the CrowdBank ICO.  The same pertains for residents of the People's Republic of China and Canada.  If you are a citizen or resident (tax or otherwise) of any other jurisdiction, please ensure that you seek your own independent legal advice with regard to your compliance with such jurisdiction&#700;s applicable laws before you participate in the ICO.</p>
+        </div>
+
+<button class="collapsible" style="text-align:justify">What currency will CrowdBank be accepting during the Token Sale?</button>
+      <div class="content" style="text-align:justify">
+<p>CrowdBank accepts ETH, BTC, USD, and EURO.</p>
+        </div>
+          
+<button class="collapsible" style="text-align:justify">Is there a bonus?</button>
+      <div class="content" style="text-align:justify">
+<p>Yes. The bonuses are 20% Bonus (Pre-Sale) and 5% Bonus (Public Sale)</p>
+        </div>
+
+<button class="collapsible" style="text-align:justify">When are the dates for the Token Sale?</button>
+      <div class="content" style="text-align:justify">
+<p>Pre-Sale &#727; 15 September 2018 to 14 October 2018
+<p>Public Sale &#727; 15 October 2018 to 14 November 2018</p>
+        </div>
+          
+<button class="collapsible" style="text-align:justify">Does CrowdBank Token Sale requires KYC?</button>
+      <div class="content" style="text-align:justify">
+<p>CrowdBank aims to be as credible and compliant as possible in everything it does, including KYC verification.  In order to participate in the CBK token sale, you must complete KYC process.</p>
+        </div>          
+        
+<button class="collapsible" style="text-align:justify">Will I receive a guarantee on the principal for the amount I participate in the CrowdBank Token Sale?</button>
+      <div class="content" style="text-align:justify">
+<p>The CrowdBank Token Sale does not guarantee any principal.</p>
+        </div>
+
+<button class="collapsible" style="text-align:justify">What kind of a return on investment can you expect from participating in the Token Sale?</button>
+      <div class="content" style="text-align:justify">
+<p>The CrowdBank Token Sale does not guarantee any form of return on any investment.  CrowdBank is not responsible for any profit or loss due to changes in the Token price.</p>
+        </div>
+
+<button class="collapsible" style="text-align:justify">Which exchanges will list the CrowdBank token?</button>
+      <div class="content" style="text-align:justify">
+<p>We are working closely with our advisors and partners to be fully compliant and well positioned for being listed on exchanges.  For strategic reasons, we will only disclose names once it is 100% confirmed.</p>
+        </div>
+
+<button class="collapsible" style="text-align:justify">Where is the main office (headquarter) situated?</button>
+      <div class="content" style="text-align:justify">
+<p>Singapore</p>
+        </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container text-center" style="padding-top:100px">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div>
+                <img src="img/logo.png" class="responsive" max width="80%" style="float:left" />
+                <div >
+                  <p style="margin-bottom:0px;padding-top: 35px;padding-left:10px;font-size:16pt" align="left"> @2018 Crowdbank</p>
+                  <p style="margin-bottom:0px;padding-left:10px" align="left"> All right reserved</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="row text-center" class="responsive" max width="80%">
+                <div class="col-lg-4 col-md-4 col-xs-4">
+                  <p class="contact-text"><b>Disclaimer</b></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-4">
+<a href="pdf/CrowdBank%20Privacy%20Policy%20(27%20July%202018).pdf">
+                  <p class="contact-text"><b>Privacy Policy</b></p></a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-4"> <a href="pdf/Terms%20and%20Conditions%20of%20Website%20Use%20(CrowdBank).pdf">
+                  <p class="contact-text"><b>Terms & Conditions</b></p></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-2 col-md-2 col-xs-2">
+                  <a href="mailto:info@crowdbank.io?Subject=Hello" target="_top"><img src="img/contact-email.png" / class="responsive2" max width="80px"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-2">
+                  <a href="https://www.facebook.com/" target="_blank"><img src="img/contact-facebook.png" / class="responsive2" max width="80px"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-2">
+                  <a href="https://www.twitter.com/" target="_blank"><img src="img/contact-twitter.png" / class="responsive2" max width="80px"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-2">
+                  <a href="https://www.bitcoin.com/" target="_blank"><img src="img/contact-bitcoin.png" / class="responsive2" max width="80px"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-2">
+                  <a href="https://www.linkedin.com/" target="_blank"><img src="img/contact-linkedin.png" / class="responsive2" max width="80px"></a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-xs-2">
+                  <a href="https://www.youtube.com/" target="_blank"><img src="img/contact-youtube.png" / class="responsive2" max width="80px"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
+
+  </body>
+
+</html>
